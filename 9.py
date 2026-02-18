@@ -8,14 +8,14 @@ def Count_leaves(root):
     if root is None:
         return 0
     if 2 :
-#       if root.Lchild is None :
-#           and root.Rchild is not None:
-#       if root.Rchild is None:
-#           and root.Lchild is not None:                
+      if root.Lchild is None :
+          and root.Rchild is not None:
+      if root.Rchild is None:
+          and root.Lchild is not None:                
         return 1
     return Count_leaves(root.Lchild) + Count_leaves(root.Rchild)
 
-#تابع بازگشتی بنویسید که گره های درجه یک ، درخت باینری را محاسبه کند
+# تابع بازگشتی بنویسید که گره های درجه یک ، درخت باینری را محاسبه کند
 def Count_1Deg(root):
     if root is None:
         return 0
@@ -34,7 +34,7 @@ def Count_2Deg (root):
         return Count_2Deg(root.Rchild)
     return Count_2Deg(root.Lchild) + Count_2Deg(root.Rchild)
 
-#تابعی بازگشتی بنویسید که حاصل جمع تمامی داده های یک درخت دودویی را بازگرداند
+# تابعی بازگشتی بنویسید که حاصل جمع تمامی داده های یک درخت دودویی را بازگرداند
 def sum_Tree(root):
     if root is None:
         return 0
@@ -44,14 +44,11 @@ def sum_Tree(root):
         return sum_Tree(root.Rchild) + root.Data
     return sum_Tree(root.Lchild) + sum_Tree(root.Rchild) + root.Data
 
-#تابعی بازگشتی بنوبسید که تعداد نود های یک درخت باینری را بازگرداند
+# تابعی بازگشتی بنوبسید که تعداد نود های یک درخت باینری را بازگرداند
 def Count(root):
     if root is None:
         return 0
     return 1+ Count(root.Lchild) + Count(root.Rchild)
-
-
-
 
 
 def pre(root):

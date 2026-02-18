@@ -1,22 +1,22 @@
 class stack : 
     def __init__(self , limit = 1000):
-        self.st=[]
-        self.lim = limit
+        self.items=[]
+        self.limit= limit
     def push(self , x):
-        if len(self.st) >= self.lim:
+        if len(self.items) >= self.limit:
            print("stack is full")
            return -1
-        self.st.append(x)
+        self.items.append(x)
     def pop(self):
-        if len(self.st) == 0 :
+        if len(self.items) == 0 :
             print("stack is empty")
             return -1
-        return self.st.pop()
+        return self.items.pop()
     def peek(self):
-        if len(self.st) == 0 :
+        if len(self.items) == 0 :
             print("stack is empty")
             return -1
-        return self.st[-1]
+        return self.items[-1]
          
 
 
@@ -32,22 +32,23 @@ k=test.peek()
 
 
 
-#"ایندکس(x) های درون پشته را برگرداند."
 def find(self,x):
     for i in range(len(self.st)):
         if self.st[i] == x :
            print(i)
 
 
-#"اولین شامل  (x) را برگرداند"
+
+
 def find1(self,x):
     for i in range(len(self.st)):
         if self.st[i] == x :
            print(i)
            return
+        
 
 
-"اخرین ایندکس شامل (x) را چاپ کند"
+
 def find2(self,x):
     for i in range(len(self.st)-1,-1,-1) :
         if self.st[i] == x :

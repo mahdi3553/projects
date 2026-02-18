@@ -1,14 +1,7 @@
-#fib(n)
-1,1,2,3,5,8,13,
-#fib(n) = fib(n-1) + fib(n-2)
-#shart bazgasht :
-#if (n = 1) or (n = 2) :
-#meqdar bazgasht :
-#1
-def fib(n):
+def Aks(n):
     if n==1 or n==2:
         return 1
-    return fib(n-1) + fib(n-2)
+    return Aks(n-1) + Aks(n-2)
 
 
 

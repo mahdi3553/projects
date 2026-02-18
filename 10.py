@@ -31,4 +31,23 @@ def Bubble(A):
     for i in range(len(A)-1):
         for j in range(len(A)-1):
             if A[j] > A[j+1]:
-                A[j], A[j+1] = A[j+1] , A[j]                       
+                A[j], A[j+1] = A[j+1] , A[j]     
+
+
+def solve_sudoku(board):
+    empty = find_empty(board)
+    if not empty:
+        return True  
+
+    row, col = empty
+
+    for num in range(1, 10):
+        if is_valid(board, row, col, num):
+            board[row][col] = num
+
+            if solve_sudoku(board):
+                return True
+
+            board[row][col] = 0  
+
+    return False

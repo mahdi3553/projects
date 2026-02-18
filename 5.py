@@ -1,4 +1,3 @@
-#node گره
 class node :
     def __init__(self , d):
         self.Data = d
@@ -38,22 +37,8 @@ class linked_list :
                     c.next = a
                 c = c.next
             print("not found")
-#رفع ایراد
-#    def insert_after(self , x, y):
-#        if self.head is None:
-#            print("list is empty")
-#        else:
-#            f = True
-#            c = self.head
-#            while c:
-#                if c.Data == x:
-#                    a = node(y)
-#                    a.next = c.next
-#                    c.next = a
-#                    f = False
-#                c = c.next
-#            if flag:
-#                print("not found")
+
+           #بعد از اصلاح 
     def insert_after(self , x, y):
         if self.head is None:
             print("list is empty")
